@@ -1,0 +1,11 @@
+{% extend "base.html" %}
+
+{% block content %}
+  <h1>hosts</h1>
+  <h2>hosts:</h2>
+  <ul>
+  {% for host in hosts %}
+    <li>{{ host.name }}</li>
+  {% endfor %}
+  </ul>
+{% endblock %}

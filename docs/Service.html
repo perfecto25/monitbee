@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Crystal Docs 1.8.2">
+<meta name="crystal_docs.project_version" content="0.1.0">
+<meta name="crystal_docs.project_name" content="monitbee">
+
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/doc.js"></script>
+
+  <meta name="repository-name" content="monitbee">
+  <title>Service - monitbee 0.1.0</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<input type="checkbox" id="sidebar-btn">
+<label for="sidebar-btn" id="sidebar-btn-label">
+  <svg class="open" xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 512 512"><title>Open Sidebar</title><path fill="currentColor" d="M80 96v64h352V96H80zm0 112v64h352v-64H80zm0 112v64h352v-64H80z"></path></svg>
+  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512"><title>Close Sidebar</title><path fill="currentColor" d="m118.6 73.4-45.2 45.2L210.7 256 73.4 393.4l45.2 45.2L256 301.3l137.4 137.3 45.2-45.2L301.3 256l137.3-137.4-45.2-45.2L256 210.7Z"></path></svg>
+</label>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="index.html">
+          monitbee
+        </a>
+      </h1>
+
+      <span class="project-version">
+        0.1.0
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="monitbee/Agent" data-name="agent">
+      <a href="Agent.html">Agent</a>
+      
+    </li>
+  
+  <li class=" " data-id="monitbee/Alert" data-name="alert">
+      <a href="Alert.html">Alert</a>
+      
+    </li>
+  
+  <li class=" " data-id="monitbee/CollectorHandler" data-name="collectorhandler">
+      <a href="CollectorHandler.html">CollectorHandler</a>
+      
+    </li>
+  
+  <li class=" " data-id="monitbee/HomeHandler" data-name="homehandler">
+      <a href="HomeHandler.html">HomeHandler</a>
+      
+    </li>
+  
+  <li class="parent " data-id="monitbee/Migration" data-name="migration">
+      <a href="Migration.html">Migration</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="monitbee/Migration/Main" data-name="migration::main">
+      <a href="Migration/Main.html">Main</a>
+      
+        <ul>
+  
+  <li class=" " data-id="monitbee/Migration/Main/V202308312357341" data-name="migration::main::v202308312357341">
+      <a href="Migration/Main/V202308312357341.html">V202308312357341</a>
+      
+    </li>
+  
+  <li class=" " data-id="monitbee/Migration/Main/V202309010118281" data-name="migration::main::v202309010118281">
+      <a href="Migration/Main/V202309010118281.html">V202309010118281</a>
+      
+    </li>
+  
+  <li class=" " data-id="monitbee/Migration/Main/V202309120903501" data-name="migration::main::v202309120903501">
+      <a href="Migration/Main/V202309120903501.html">V202309120903501</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" current" data-id="monitbee/Service" data-name="service">
+      <a href="Service.html">Service</a>
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Service
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="Service.html">Service</a></li><li class="superclass">Marten::DB::Model</li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      models/monit.cr
+    
+    <br/>
+  
+
+
+
+  
+    <h2>
+      <a id="constant-summary" class="anchor" href="#constant-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+      Constant Summary
+    </h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="FIELDS_">
+        <strong>FIELDS_</strong> = <code>{<span class="s">&quot;id&quot;</span> <span class="o">=&gt;</span> {<span class="k">type</span>: <span class="s">&quot;big_int&quot;</span>, kwargs: {primary_key: <span class="n">true</span>, auto: <span class="n">true</span>}}, <span class="s">&quot;agent&quot;</span> <span class="o">=&gt;</span> {<span class="k">type</span>: <span class="s">&quot;many_to_one&quot;</span>, kwargs: {to: <span class="t">Agent</span>}}, <span class="s">&quot;name&quot;</span> <span class="o">=&gt;</span> {<span class="k">type</span>: <span class="s">&quot;string&quot;</span>, kwargs: {max_size: <span class="n">40</span>}}} <span class="k">of</span> <span class="t">Nil</span> <span class="o">=&gt;</span> <span class="t">Nil</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#agent%3AAgent%7CNil-instance-method" class="signature"><strong>#agent</strong> : Agent | Nil</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#agent%21%3AAgent-instance-method" class="signature"><strong>#agent!</strong> : Agent</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#agent%3D%28related_object%3AAgent%7CNil%29-instance-method" class="signature"><strong>#agent=</strong>(related_object : Agent | Nil)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#agent%3F-instance-method" class="signature"><strong>#agent?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#agent_id%3AMarten%3A%3ADB%3A%3AField%3A%3AReferenceDBTypes%7CNil-instance-method" class="signature"><strong>#agent_id</strong> : Marten::DB::Field::ReferenceDBTypes | Nil</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#agent_id%21-instance-method" class="signature"><strong>#agent_id!</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#agent_id%3D%28related_id%3AMarten%3A%3ADB%3A%3AField%3A%3AReferenceDBTypes%7CNil%29-instance-method" class="signature"><strong>#agent_id=</strong>(related_id : Marten::DB::Field::ReferenceDBTypes | Nil)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#agent_id%3F-instance-method" class="signature"><strong>#agent_id?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#id%3AInt32%7CInt64%7CNil%7CNil-instance-method" class="signature"><strong>#id</strong> : Int32 | Int64 | Nil | Nil</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#id%21-instance-method" class="signature"><strong>#id!</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#id%3D%28id%3AInt32%7CInt64%7CNil%7CNil%29-instance-method" class="signature"><strong>#id=</strong>(id : Int32 | Int64 | Nil | Nil)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#id%3F-instance-method" class="signature"><strong>#id?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#name%3AString%7CNil%7CNil-instance-method" class="signature"><strong>#name</strong> : String | Nil | Nil</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#name%21-instance-method" class="signature"><strong>#name!</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#name%3D%28name%3AString%7CNil%7CNil%29-instance-method" class="signature"><strong>#name=</strong>(name : String | Nil | Nil)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#name%3F-instance-method" class="signature"><strong>#name?</strong></a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="agent:Agent|Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>agent</strong> : <a href="Agent.html">Agent</a> | Nil
+
+        <a class="method-permalink" href="#agent%3AAgent%7CNil-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="agent!:Agent-instance-method">
+      <div class="signature">
+        
+        def <strong>agent!</strong> : <a href="Agent.html">Agent</a>
+
+        <a class="method-permalink" href="#agent%21%3AAgent-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="agent=(related_object:Agent|Nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>agent=</strong>(related_object : <a href="Agent.html">Agent</a> | Nil)
+
+        <a class="method-permalink" href="#agent%3D%28related_object%3AAgent%7CNil%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="agent?-instance-method">
+      <div class="signature">
+        
+        def <strong>agent?</strong>
+
+        <a class="method-permalink" href="#agent%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="agent_id:Marten::DB::Field::ReferenceDBTypes|Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>agent_id</strong> : Marten::DB::Field::ReferenceDBTypes | Nil
+
+        <a class="method-permalink" href="#agent_id%3AMarten%3A%3ADB%3A%3AField%3A%3AReferenceDBTypes%7CNil-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="agent_id!-instance-method">
+      <div class="signature">
+        
+        def <strong>agent_id!</strong>
+
+        <a class="method-permalink" href="#agent_id%21-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="agent_id=(related_id:Marten::DB::Field::ReferenceDBTypes|Nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>agent_id=</strong>(related_id : Marten::DB::Field::ReferenceDBTypes | Nil)
+
+        <a class="method-permalink" href="#agent_id%3D%28related_id%3AMarten%3A%3ADB%3A%3AField%3A%3AReferenceDBTypes%7CNil%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="agent_id?-instance-method">
+      <div class="signature">
+        
+        def <strong>agent_id?</strong>
+
+        <a class="method-permalink" href="#agent_id%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="id:Int32|Int64|Nil|Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>id</strong> : Int32 | Int64 | Nil | Nil
+
+        <a class="method-permalink" href="#id%3AInt32%7CInt64%7CNil%7CNil-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="id!-instance-method">
+      <div class="signature">
+        
+        def <strong>id!</strong>
+
+        <a class="method-permalink" href="#id%21-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="id=(id:Int32|Int64|Nil|Nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>id=</strong>(id : Int32 | Int64 | Nil | Nil)
+
+        <a class="method-permalink" href="#id%3D%28id%3AInt32%7CInt64%7CNil%7CNil%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="id?-instance-method">
+      <div class="signature">
+        
+        def <strong>id?</strong>
+
+        <a class="method-permalink" href="#id%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="name:String|Nil|Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>name</strong> : String | Nil | Nil
+
+        <a class="method-permalink" href="#name%3AString%7CNil%7CNil-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="name!-instance-method">
+      <div class="signature">
+        
+        def <strong>name!</strong>
+
+        <a class="method-permalink" href="#name%21-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="name=(name:String|Nil|Nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>name=</strong>(name : String | Nil | Nil)
+
+        <a class="method-permalink" href="#name%3D%28name%3AString%7CNil%7CNil%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="name?-instance-method">
+      <div class="signature">
+        
+        def <strong>name?</strong>
+
+        <a class="method-permalink" href="#name%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
