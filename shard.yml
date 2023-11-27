@@ -6,3 +6,5 @@ dependencies:
     github: martenframework/marten
   sqlite3:
     github: crystal-lang/crystal-sqlite3
+  xml_converter:
+    github: mamantoha/xml_converter
